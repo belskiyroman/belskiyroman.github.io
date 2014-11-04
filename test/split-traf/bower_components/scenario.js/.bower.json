@@ -1,0 +1,17 @@
+{
+  "name": "Scenario.js",
+  "author": "Maker Studios",
+  "version": "1.2.0",
+  "main": "dist/scenario.min.js",
+  "homepage": "https://github.com/MakerStudios/Scenario.js",
+  "_release": "1.2.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "1.2.0",
+    "commit": "50d3268f42f2fa9a49327d1362455feb76f0c2e2"
+  },
+  "_source": "git://github.com/MakerStudios/Scenario.js.git",
+  "_target": "~1.2.0",
+  "_originalSource": "scenario.js",
+  "_direct": true
+}
