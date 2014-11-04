@@ -45,17 +45,19 @@
 		.play {
 			position: relative;
 		}
-		.play:after {
+		.play a:after {
 			content: '';
 			position: absolute;
-			top:0;
-			left:50%;
-			margin-left: -45px;
-			margin-top: -130px;
+			top: 50%;
+			left: 50%;
+			margin-left: -25%;
+			margin-top: -25%;
 			display: block;
-			width: 90px;
-			height: 90px;
+			width: 50%;
+			height: 50%;
 			background: url('images/play.png');
+			background-repeat: no-repeat;
+			background-size: contain;
 		}
 
 		body {
@@ -183,6 +185,15 @@
 			.img-responsive {
 				width:100%!important;
 			}
+			.margin-responsive {
+				margin-left: 0!important;
+				margin-right: 0!important;
+				margin-top: 20px!important;
+				margin-bottom: 20px!important;
+			}
+			.col-responsive{
+				width: 4%!important;
+			}
 		}
 
 		@media only screen and (max-width: 479px) {
@@ -282,16 +293,84 @@
 														<td height="30"></td>
 													</tr>
 													<tr>
-														<td width="12%"></td>
+														<td width="12%" class="col-responsive"></td>
 														<td valign="top" width="84%" style="text-align:center;">
 
 
 
-															<table border="0" cellpadding="0" cellspacing="0" style="display: inline-block;margin: 10px 60px 30px 10px;height:230px; width: 170px;background: white;outline: 1px solid silver;box-shadow: 1px 1px 1px 0px silver;">
+															<table class="margin-responsive" border="0" cellpadding="0" cellspacing="0" style="display: inline-block;margin:10px 60px 30px 10px;background: white;outline: 1px solid silver;box-shadow: 1px 1px 1px 0px silver;">
 																<tbody>
 																	<tr>
-																		<td style="width: 170px;height: 170px;">
-																			<a href="#"  class="play">
+																		<td class="play">
+																			<a href="#">
+																				<img class="img-responsive" src="http://jpg.st.audiko.net/dynamic/albums/500x500/1980/1980985.jpg" style="display: block; width:170px;">
+																			</a>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td style="padding-left: 15px;padding-top: 10px;padding-bottom: 12px;">
+																			<table border="0" cellpadding="0" cellspacing="0" width="100%">
+																				<tbody>
+																					<tr>
+																						<td style="font-size:14px; color:#2487c5; font-weight:normal; line-height: 18px; text-align:left; font-family: Helvetica, Arial, Helvetica, sans-serif;">
+																							<a href="#" style="color:#2487c5; text-decoration: none;">
+																								<span style="color:#2487c5;">Counting Stars</span>
+																							</a>
+																						</td>
+																					</tr>
+																					<tr>
+																						<td height="20" valign="bottom" style="font-size:14px; color:#445258; font-weight:normal; text-align:left; font-family: Helvetica, Arial, Helvetica, sans-serif;">
+																							One Republic
+																						</td>
+																					</tr>
+																				</tbody>
+																			</table>
+																		</td>
+																	</tr>
+																</tbody>
+															</table>
+
+
+															<table class="margin-responsive" border="0" cellpadding="0" cellspacing="0" style="display: inline-block;margin:10px 60px 30px 10px;background: white;outline: 1px solid silver;box-shadow: 1px 1px 1px 0px silver;">
+																<tbody>
+																	<tr>
+																		<td class="play">
+																			<a href="#">
+																				<img class="img-responsive" src="http://jpg.st.audiko.net/dynamic/albums/500x500/1980/1980985.jpg" style="display: block; width:170px;">
+																			</a>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td style="padding-left: 15px;padding-top: 10px;padding-bottom: 12px;">
+																			<table border="0" cellpadding="0" cellspacing="0" width="100%">
+																				<tbody>
+																					<tr>
+																						<td style="font-size:14px; color:#2487c5; font-weight:normal; line-height: 18px; text-align:left; font-family: Helvetica, Arial, Helvetica, sans-serif;">
+																							<a href="#" style="color:#2487c5; text-decoration: none;">
+																								<span style="color:#2487c5;">Counting Stars</span>
+																							</a>
+																						</td>
+																					</tr>
+																					<tr>
+																						<td height="20" valign="bottom" style="font-size:14px; color:#445258; font-weight:normal; text-align:left; font-family: Helvetica, Arial, Helvetica, sans-serif;">
+																							One Republic
+																						</td>
+																					</tr>
+																				</tbody>
+																			</table>
+																		</td>
+																	</tr>
+																</tbody>
+															</table>
+
+
+
+
+															<table border="0" cellpadding="0" cellspacing="0" style="display: inline-block;margin:10px 60px 30px 10px;height:230px; width: 170px;background: white;outline: 1px solid silver;box-shadow: 1px 1px 1px 0px silver;">
+																<tbody>
+																	<tr>
+																		<td style="width: 170px;height: 170px;" class="play">
+																			<a href="#">
 																				<img class="img-responsive" src="images/img.png" style="display: block; width:100%;" width="170">
 																			</a>
 																		</td>
@@ -322,11 +401,11 @@
 
 
 
-															<table border="0" cellpadding="0" cellspacing="0" style="display: inline-block;margin: 10px 60px 30px 10px;height:230px; width: 170px;background: white;outline: 1px solid silver;box-shadow: 1px 1px 1px 0px silver;">
+															<table border="0" cellpadding="0" cellspacing="0" style="display: inline-block;margin:10px 60px 30px 10px;height:230px; width: 170px;background: white;outline: 1px solid silver;box-shadow: 1px 1px 1px 0px silver;">
 																<tbody>
 																	<tr>
-																		<td style="width: 170px;height: 170px;">
-																			<a href="#"  class="play">
+																		<td style="width: 170px;height: 170px;" class="play">
+																			<a href="#">
 																				<img class="img-responsive" src="images/img.png" style="display: block; width:100%;" width="170">
 																			</a>
 																		</td>
@@ -357,11 +436,11 @@
 
 
 
-															<table border="0" cellpadding="0" cellspacing="0" style="display: inline-block;margin: 10px 60px 30px 10px;height:230px; width: 170px;background: white;outline: 1px solid silver;box-shadow: 1px 1px 1px 0px silver;">
+															<table border="0" cellpadding="0" cellspacing="0" style="display: inline-block;margin:10px 60px 30px 10px;height:230px; width: 170px;background: white;outline: 1px solid silver;box-shadow: 1px 1px 1px 0px silver;">
 																<tbody>
 																	<tr>
-																		<td style="width: 170px;height: 170px;">
-																			<a href="#"  class="play">
+																		<td style="width: 170px;height: 170px;" class="play">
+																			<a href="#">
 																				<img class="img-responsive" src="images/img.png" style="display: block; width:100%;" width="170">
 																			</a>
 																		</td>
@@ -392,11 +471,11 @@
 
 
 
-															<table border="0" cellpadding="0" cellspacing="0" style="display: inline-block;margin: 10px 60px 30px 10px;height:230px; width: 170px;background: white;outline: 1px solid silver;box-shadow: 1px 1px 1px 0px silver;">
+															<table border="0" cellpadding="0" cellspacing="0" style="display: inline-block;margin:10px 60px 30px 10px;height:230px; width: 170px;background: white;outline: 1px solid silver;box-shadow: 1px 1px 1px 0px silver;">
 																<tbody>
 																	<tr>
-																		<td style="width: 170px;height: 170px;">
-																			<a href="#"  class="play">
+																		<td style="width: 170px;height: 170px;" class="play">
+																			<a href="#">
 																				<img class="img-responsive" src="images/img.png" style="display: block; width:100%;" width="170">
 																			</a>
 																		</td>
@@ -427,46 +506,11 @@
 
 
 
-															<table border="0" cellpadding="0" cellspacing="0" style="display: inline-block;margin: 10px 60px 30px 10px;height:230px; width: 170px;background: white;outline: 1px solid silver;box-shadow: 1px 1px 1px 0px silver;">
+															<table border="0" cellpadding="0" cellspacing="0" style="display: inline-block;margin:10px 60px 30px 10px;height:230px; width: 170px;background: white;outline: 1px solid silver;box-shadow: 1px 1px 1px 0px silver;">
 																<tbody>
 																	<tr>
-																		<td style="width: 170px;height: 170px;">
-																			<a href="#"  class="play">
-																				<img class="img-responsive" src="images/img.png" style="display: block; width:100%;" width="170">
-																			</a>
-																		</td>
-																	</tr>
-																	<tr>
-																		<td style="padding-left: 15px;padding-top: 10px;">
-																			<table border="0" cellpadding="0" cellspacing="0" width="100%">
-																				<tbody>
-																					<tr>
-																						<td style="font-size:14px; color:#2487c5; font-weight:normal; line-height: 18px; text-align:left; font-family: Helvetica, Arial, Helvetica, sans-serif;">
-																							<a href="#" style="color:#2487c5; text-decoration: none;">
-																								<span style="color:#2487c5;">Counting Stars</span>
-																							</a>
-																						</td>
-																					</tr>
-																					<tr>
-																						<td height="20" valign="bottom" style="font-size:14px; color:#445258; font-weight:normal; text-align:left; font-family: Helvetica, Arial, Helvetica, sans-serif;">
-																							One Republic
-																						</td>
-																					</tr>
-																				</tbody>
-																			</table>
-																		</td>
-																	</tr>
-																</tbody>
-															</table>
-
-
-
-
-															<table border="0" cellpadding="0" cellspacing="0" style="display: inline-block;margin: 10px 60px 30px 10px;height:230px; width: 170px;background: white;outline: 1px solid silver;box-shadow: 1px 1px 1px 0px silver;">
-																<tbody>
-																	<tr>
-																		<td style="width: 170px;height: 170px;">
-																			<a href="#"  class="play">
+																		<td style="width: 170px;height: 170px;" class="play">
+																			<a href="#">
 																				<img class="img-responsive" src="images/img.png" style="display: block; width:100%;" width="170">
 																			</a>
 																		</td>
@@ -497,7 +541,6 @@
 
 														</td>
 														<td width="4%"></td>
-
 													</tr>
 												</table>
 											</td>
