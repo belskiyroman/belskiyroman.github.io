@@ -7,25 +7,43 @@
 	<script type="text/javascript" src="mixpanel.js"></script>
 	<script type="text/javascript" src="scenario.js"></script>
 </head>
-<body>
+<body class="home-v1">
 <script>
-	// var test = new Scenario({
-	//   name: 'My Test Name',
-	// })
-	// .test({
-	//   name: 'Test A',
-	//   weight: 3, // The optional weight of the test. Each test has a weight of 1 by default
-	//   className: 'foobar' // An optional class to add to the body tag. If left empty, the test name will be turned into a slug (i.e. "test-a")
-	// })
-	// .test({
-	//   name: 'Test B'
-	//   callback: function(){ console.log('I was chosen!'); } // An optional callback if the test is chosen
-	// })
-	// .go();
+	var test = new Scenario({
+	  name: 'My Test Name'
+	})
 
-	// // At a later point
-	// test.complete();
+	.test({
+	  name: 'Home V1',
+	  weight: 3, // The optional weight of the test. Each test has a weight of 1 by default
+	  className: 'foobar' // An optional class to add to the body tag. If left empty, the test name will be turned into a slug (i.e. "test-a")
+	})
+	.test({
+	  name: 'Home V2',
+	  callback: function(){ console.log('I was chosen!'); } // An optional callback if the test is chosen
+	})
+	.go();
+
+	// At a later point
+
+	window.onload = function() {
+		btn.onclick = function() {
+
+			console.log("Click");
+
+			test.complete();
+		};
+	}
+
+
+
 
 </script>
+
+<div class="home-v2">
+	<button id = "btn">Click</button>
+</div>
+
+
 </body>
 </html>
