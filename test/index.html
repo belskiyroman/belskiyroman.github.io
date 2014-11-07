@@ -4,16 +4,15 @@
   <meta charset="UTF-8">
   <title></title>
   <style>
-	html, body, body > table {
+	html, body {
 		width: 100%;
 		height: 100%;
+		margin: 0;
+		padding: 0;
 	}
 	.relative {
 		position: relative;
 	}
-
-
-
 	.btn{
 		width:35px;
 		height: 35px;
@@ -23,39 +22,48 @@
 	.red{
 		background: red;
 		position: absolute;
-		bottom: 6px;
-		left: 6px;
+		top: 50%;
+		left: 50%;
+		margin-left: -160px;
+		margin-top: 200px;
 	}
 	.green{
 		background: green;
 		position: absolute;
-		bottom: 6px;
-		right: 6px;
+		top: 50%;
+		left: 50%;
+		margin-left: 120px;
+		margin-top: 200px;
 	}
 
+	img {
+		width: 320px;
+		height: 480px;
+	}
+	.wrapp {
+		width: 320px;
+		height: 480px;
+		margin: auto;
+		position: absolute;
+		top: 0%;
+		bottom: 0%;
+		right: 0%;
+		left: 0%;
+	}
+	.wrapp-banner {
+		width: 320px;
+		height: 480px;
+		position: relative;
+	}
   </style>
 </head>
 <body>
-	<table align="center">
-		<tbody>
-			<tr>
-				<td valign="middle">
-
-					<table align="center" width="320" height="480">
-						<tbody>
-							<tr>
-								<td class="relative">
-									<img src="img.png" width="320" height="480">
-									<div class="btn red"><a href="https://www.yahoo.com/">No</a></div>
-									<div class="btn green"><a href="https://www.google.com.ua">Ok</a></div>
-								</td>
-							</tr>
-						</tbody>
-					</table>
-
-				</td>
-			</tr>
-		</tbody>
-	</table>
+	<div class="wrapp">
+		<div class="wrapp-banner">
+			<img src="http://belskiyroman.github.io/test/img.png">
+			<div class="btn red"><a href="https://www.yahoo.com/">No</a></div>
+			<div class="btn green"><a href="https://www.google.com.ua">Ok</a></div>
+		</div>
+	</div>
 </body>
 </html>
