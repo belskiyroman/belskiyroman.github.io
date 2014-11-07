@@ -57,6 +57,9 @@
 		padding-left: 98px;
 		padding-right: 98px;
 	}
+	.p20 {
+		padding-top: 20%;
+	}
   </style>
     <!-- start Mixpanel -->
   <script type="text/javascript">
@@ -69,8 +72,8 @@
     mixpanel.track("site_entry", {group: 'B'});
   </script>
 </head>
-<body>
-	<div class="btn m20" onclick="mixpanel.track('market_click', {group: 'B'});">Download ringtone</div>
+<body class="p20">
+	<div class="btn" onclick="mixpanel.track('market_click', {group: 'B'});">Download ringtone</div>
 	<p class="f1 p60 m20">All ringtones in just one app</p>
 	<p class="f2 p98 m10">Download and share over 10,000,000 ringtones with friends!</p>
 </body>
