@@ -24,13 +24,16 @@
 		color: white;
 	}
 	img {
-		margin-top: 0px;
+		width: 40%;
+		max-width: 320px;
 	}
 	.btn {
 		background: rgb(34, 195, 90);
 		margin: 0 auto;
 		padding: 14px;
-		width: 200px;
+		width: 40%;
+		max-width: 320px;
+		min-width: 200px;
 		border-radius: 5px;
 		font-size: 22px;
 	}
@@ -43,12 +46,12 @@
 	.m30-top {
 		margin-top: 10%;
 	}
-	.m30-bottom {
+	/* {
 		margin-bottom: 10%;
 	}
 	.m-extra {
 		margin-top: 60px;
-	}
+	}*/
 	.p60 {
 		padding-left: 60px;
 		padding-right: 60px;
@@ -70,9 +73,9 @@
   </script>
 </head>
 <body>
-	<img class="m30-top m30-bottom" src="img/logo_audiko.png" alt="">
-	<p class="f1 m30-top m30-bottom m-extra p60">All ringtones in just one app</p>
-	<p class="f2 m30-top m30-bottom m-extra p98">Download and share over 10,000,000 ringtones with friends!</p>
-	<div class="btn m30-top m-extra" onclick="mixpanel.track('market_click', {group: 'B'});">Download ringtone</div>
+	<img class="m30-top" src="img/logo_audiko.png" alt="">
+	<p class="f1 p60">All ringtones in just one app</p>
+	<p class="f2 p98">Download and share over 10,000,000 ringtones with friends!</p>
+	<div class="btn m30-top" onclick="mixpanel.track('market_click', {group: 'B'});">Download ringtone</div>
 </body>
 </html>
