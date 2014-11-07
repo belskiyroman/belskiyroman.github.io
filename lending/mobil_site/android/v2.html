@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, target-densitydpi=device-dpi, user-scalable=no">
   <title>Audiko</title>
 
-  <link href='http://fonts.googleapis.com/css?family=Roboto:400,400italic' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Roboto:500,500italic' rel='stylesheet' type='text/css'>
   <style>
 	html, body {
 		width: 100%;
@@ -14,13 +14,14 @@
 		padding: 0;
 	}
 	body {
-		background-color: white;
+		background-image: url('img/bg.png');
+		background-color: black;
 		background-position: center;
 		background-repeat: no-repeat;
-		background-size: contain;
+		background-size: 100%;
 		text-align: center;
 		font-family: 'Roboto', Verdana, Geneva, sans-serif;
-
+		color: white;
 	}
 	img {
 		width: 40%;
@@ -30,31 +31,23 @@
 		background: rgb(34, 195, 90);
 		margin: 0 auto;
 		padding: 14px;
-		width: 50%;
+		width: 40%;
 		max-width: 320px;
 		min-width: 200px;
 		border-radius: 5px;
 		font-size: 22px;
-		color: white;
 	}
 	.f1 {
-		font-size: 20px;
+		font-size: 1.7em;
 	}
 	.f2 {
-		font-size: 18px;
-		color: rgb(100, 135, 237);
+		font-size: 1em;
 	}
-	.m10-top {
+	.m20 {
+		margin-top: 20%;
+	}
+	.m10 {
 		margin-top: 10px;
-	}
-	.m50-top {
-		margin-top: 50px;
-	}
-	.m50-bottom {
-		margin-bottom: 50px;
-	}
-	.m-extra {
-		margin-top: 60px;
 	}
 	.p60 {
 		padding-left: 60px;
@@ -69,7 +62,7 @@
   <script type="text/javascript">
     (function(f,b){if(!b.__SV){var a,e,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");
     for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=f.createElement("script");a.type="text/javascript";a.async=!0;a.src="//cdn.mxpnl.com/libs/mixpanel-2.2.min.js";e=f.getElementsByTagName("script")[0];e.parentNode.insertBefore(a,e)}})(document,window.mixpanel||[]);
-    mixpanel.init("15472fedd8b1e7a96cfbc284b1817354");
+    mixpanel.init("c7e01c8e3f7aad60810c7fcf89130b52");
   </script>
   <!-- end Mixpanel -->
   <script>
@@ -77,10 +70,8 @@
   </script>
 </head>
 <body>
-	<img class="m10-top" src="img/logo_audiko.png" alt="">
-	<p class="f1">One Republic</p>
-	<img src="https://widget.audiko.net/img/icon_song.png" alt="">
-	<p class="f2">Counting Starts</p>
-	<div class="btn m50-bottom" onclick="mixpanel.track('market_click', {group: 'B'});">Download ringtone</div>
+	<div class="btn m20" onclick="mixpanel.track('market_click', {group: 'B'});">Download ringtone</div>
+	<p class="f1 p60 m20">All ringtones in just one app</p>
+	<p class="f2 p98 m10">Download and share over 10,000,000 ringtones with friends!</p>
 </body>
 </html>
