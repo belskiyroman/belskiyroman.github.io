@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, target-densitydpi=device-dpi, user-scalable=no">
+  <title>Audiko</title>
+
+  <link href='http://fonts.googleapis.com/css?family=Roboto:500,500italic' rel='stylesheet' type='text/css'>
+  <style>
+	html, body {
+		width: 100%;
+		height: 100%;
+		margin: 0;
+		padding: 0;
+	}
+	body {
+		width: 100%;
+		height: 80%;
+		margin: 0;
+		padding: 0;
+	}
+	body {
+		background-image: url('img/bg.png');
+		background-color: black;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: 100%;
+		text-align: center;
+		font-family: 'Roboto', Verdana, Geneva, sans-serif;
+		color: white;
+	}
+	img {
+		width: 40%;
+		max-width: 320px;
+	}
+	.btn {
+		display: block;
+		background: rgb(34, 195, 90);
+		margin: 0 auto;
+		padding: 14px;
+		width: 40%;
+		max-width: 320px;
+		min-width: 200px;
+		border-radius: 5px;
+		font-size: 22px;
+		text-decoration: none;
+		color: white;
+	}
+	.f1 {
+		font-size: 1.7em;
+	}
+	.f2 {
+		font-size: 1em;
+	}
+	.m20 {
+		margin-top: 20%;
+	}
+	.m10 {
+		margin-top: 10px;
+	}
+	.p60 {
+		padding-left: 60px;
+		padding-right: 60px;
+	}
+	.p76 {
+		padding-left: 76px;
+		padding-right: 76px;
+	}
+	.p20 {
+		padding-top: 20%;
+	}
+  </style>
+    <!-- start Mixpanel -->
+  <script type="text/javascript">
+    (function(f,b){if(!b.__SV){var a,e,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");
+    for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=f.createElement("script");a.type="text/javascript";a.async=!0;a.src="//cdn.mxpnl.com/libs/mixpanel-2.2.min.js";e=f.getElementsByTagName("script")[0];e.parentNode.insertBefore(a,e)}})(document,window.mixpanel||[]);
+    mixpanel.init("c7e01c8e3f7aad60810c7fcf89130b52");
+  </script>
+  <!-- end Mixpanel -->
+  <script>
+    mixpanel.track("site_entry", {group: 'B'});
+  </script>
+</head>
+<body class="p20">
+	<a href="http://taps.io/ios_group_b" class="btn" onclick="mixpanel.track('market_click', {group: 'B'});">Download ringtone</a>
+	<p class="f1 p60 m20">All ringtones in just one app</p>
+	<p class="f2 p76 m10">Download and share over 10,000,000 ringtones with friends!</p>
+</body>
+</html>
