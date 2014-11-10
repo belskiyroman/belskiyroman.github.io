@@ -34,6 +34,7 @@
 		max-width: 320px;
 	}
 	.btn {
+		display: block;
 		background: rgb(34, 195, 90);
 		margin: 0 auto;
 		padding: 14px;
@@ -42,6 +43,8 @@
 		min-width: 200px;
 		border-radius: 5px;
 		font-size: 22px;
+		text-decoration: none;
+		color: white;
 	}
 	.f1 {
 		font-size: 1.7em;
@@ -79,7 +82,7 @@
   </script>
 </head>
 <body class="p20">
-	<div class="btn" onclick="mixpanel.track('market_click', {group: 'B'});">Download ringtone</div>
+	<a href="http://taps.io/android_group_a" class="btn" onclick="mixpanel.track('market_click', {group: 'B'});">Download ringtone</a>
 	<p class="f1 p60 m20">All ringtones in just one app</p>
 	<p class="f2 p98 m10">Download and share over 10,000,000 ringtones with friends!</p>
 </body>
