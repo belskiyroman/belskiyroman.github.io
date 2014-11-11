@@ -95,7 +95,12 @@
                 margin-bottom: 40px;
             }
         }
-        @media (max-width: 767px) {
+        @media (min-width: 700px) {
+            .sm-padding-left-none {
+                padding-left: 0;
+            }
+        }
+        @media (max-width: 699px) {
             .bottom-list li {
                 margin-top: 10px;
                 margin-bottom: 10px;
@@ -146,7 +151,7 @@
                     <br>
                 you're nearby!</h1>
                 <p class="promo-text">Receive notification and location from your friends when you are in the area. Install and enjoy!</p>
-                <div class="col-sm-12 col-sm-offset-0 col-md-12 col-md-offset-0 col-lg-12 col-lg-offset-0 ">
+                <div class="sm-padding-left-none col-sm-12 col-sm-offset-0 col-md-12 col-md-offset-0 col-lg-12 col-lg-offset-0 ">
                     <a href="#">
                         <img class="col-xs-9 col-xs-offset-2 col-sm-6 col-sm-offset-0 col-md-6 col-md-offset-0 col-lg-6 col-lg-offset-0 market-button" src="img/GooglePlay.png" alt="google play">
                     </a>
@@ -154,7 +159,7 @@
                         <img class="col-xs-9 col-xs-offset-2 col-sm-6 col-sm-offset-0 col-md-6 col-md-offset-0 col-lg-6 col-lg-offset-0 market-button" src="img/AppStore.png" alt="app store">
                     </a> -->
                 </div>
-                <div class="like hidden-xs col-sm-3 col-sm-offset-1 col-md-3 col-md-offset-0 col-lg-3 col-lg-offset-0 market-button">
+                <div class="like hidden-xs col-sm-3 col-sm-offset-0 col-md-3 col-md-offset-0 col-lg-3 col-lg-offset-0 market-button">
                     <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://hiapp.rocks" data-text="I use #Hi to know when friends are nearby." data-via="gethiapp">Tweet</a>
                     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
                 </div>
