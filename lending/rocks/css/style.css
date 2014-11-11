@@ -15,9 +15,6 @@ body {
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .lead {
     font-weight: 300;
 }
-small {
-    font-size: 0.7em;
-}
 button, input {
     outline: none !important;
 }
@@ -25,9 +22,7 @@ button, input {
     background: none !important;
     height: 25px;
 }
-.txt-norm {
-    font-weight: 400;
-}
+
 /*----------------------------------------
     standart img width and height
 
@@ -49,7 +44,7 @@ button, input {
 
 .rox-page {
     width: 940px;
-    margin: 30px auto 0;
+    margin: 0 auto;
     line-height: 1.5em;
     font-family: sans-serif,serif;
     -webkit-font-smoothing: antialiased;
@@ -593,8 +588,8 @@ hr.separator-alt {
         margin-top: 45px;
     }
 }
-@media (min-width: 768px) and (max-width: 980px) {
-    #hero img {
+@media (min-width: 700px) and (max-width: 980px) {
+    #main-slider{
         margin-top: 200px;
     }
     #features .iphone-1 {
@@ -609,7 +604,7 @@ hr.separator-alt {
     }
 }
 @media (min-width: 980px) and (max-width: 990px) {
-    #hero img {
+    #main-slider{
         margin-top: 200px;
     }
 }
@@ -676,7 +671,7 @@ hr.separator-alt {
         height: 100%;
     }
 }
-@media (min-width: 768px) and (max-width: 900px) {
+@media (min-width: 700px) and (max-width: 900px) {
     #features .item h2 {
         font-size: 24px;
     }
@@ -684,7 +679,7 @@ hr.separator-alt {
         height: 100%;
     }
 }
-@media (max-width: 768px) {
+@media (max-width: 700px) {
     #hero .buttons {
         margin-bottom: 50px;
     }
