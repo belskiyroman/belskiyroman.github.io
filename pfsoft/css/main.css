@@ -42,7 +42,8 @@ body {
 	background: #fff;			
 	background: RGBA(255, 255, 255, 0.8);
 	display: table-cell;
-	filter: alpha(opacity=80);			
+	filter: alpha(opacity=80);	
+	//float: left;	
 	min-height: 100%;
 	position: relative;
 	text-align: right;	
@@ -81,14 +82,18 @@ body {
 	color: #fff;
 }
 .right-col {
-	background: RGBA(34, 34, 34, 0.5);
+	background: #000;
+	background: RGBA(34, 34, 34, 0.5);	
 	color: #fff;
 	display: table-cell;
-	filter: alpha(opacity=80);
+	filter: alpha(opacity=50);	
 	min-height: 100%;
 	position: relative;		
 	vertical-align: top;
 	width: 58%;			
+}
+:root .right-col {
+	filter: alpha(opacity=80)\0/;
 }
 .block-decor {
 	font-size: 16px;
@@ -139,14 +144,6 @@ body {
 		margin-right: 5%;
 	}
 }
-@media only screen and (max-width: 1024px) and (orientation : landscape) {
-	.logo {
-		padding-top: 100px;
-	}
-	.block-decor {
-	    padding-top: 100px;
-	}
-}
 @media only screen and (max-width: 768px) {
 	.logo {
 		padding-top: 50px;
@@ -192,12 +189,15 @@ body {
 		max-width: 320px;
 	}
 	.menu {
-		padding: 0px 25px 10px 0;
+		float: none;
+		margin: 0 auto;
+		padding: 0 0 10px;
 	}
 	.menu-btn {
 		height: 30px;
 		line-height: 30px;
 		margin-top: 5px;
+		padding-right: 0;
 	}
 	.btn-block {
 		margin: 20px 0 0;
@@ -208,5 +208,20 @@ body {
 	.all-r-reserv {
 		font-size: 12px;
 		left: 10px;
+	}
+	.left-col {
+		text-align: center;
+	}
+}
+@media only screen and (max-width: 362px) {
+	.block-decor {
+		text-align: center;
+	}
+	.btn-style:nth-of-type(2n) {
+	    margin: 10px auto;
+	}
+	.btn-style {
+		float: none;
+	    margin: 0 auto;
 	}
 }
