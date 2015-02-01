@@ -105,7 +105,6 @@ header {
 menu {
 	display: table;
 	float: left;
-	width: 500px;
 	line-height: 80px;
 	.menu-links {
 		display: table;
@@ -118,7 +117,7 @@ menu {
 				text-decoration: none;
 				text-transform: uppercase;
 				font-weight: bold;
-				margin: 0 11px;
+				margin: 0 8px;
 				&:hover {
 					color: #fe4419;
 				}
@@ -126,6 +125,10 @@ menu {
 		}
 	}
 
+}
+
+.wrap-registr-ln {
+    width: 300px;
 }
 
 .registration {
@@ -441,7 +444,6 @@ menu {
 	}
 	.touchslider-item {
 		width: 960px;
-		overflow-y: auto;
 		box-sizing: border-box;
 		margin-top: 25px;
 		.review-text {
@@ -477,18 +479,21 @@ footer {
 	background: #d1f2ff;
 	padding: 20px 0;
 	position: relative;
-	height: 130px;
+	min-height: 130px;
 	margin-top: -130px;
 	box-sizing: border-box;
 	.logo-blue {
 		position: absolute;
 
 	}
-	.menu-line, .nav-line {
+	.menu-line {
 		margin-left: 170px;
+        display: table;
+        float: left;
 	}
 	menu {
 		line-height: 30px;
+        float: none;
 		.menu-links {
 			margin: 0;
 			.menu-links-item a {
@@ -527,13 +532,15 @@ footer {
 	.t {
 		background-position: -127px 0px;
 	}
-	.nav-line {
+	.btn-block {
 		line-height: 35px;
-		padding-top: 15px;
+        width: 185px;
+        float: right;
 	}
 	nav {
 		display: table;
 		float: left;
+        padding-top: 20px;
 		.nav-links {
 			display: table;
 			margin: 0 auto;
@@ -562,15 +569,70 @@ footer {
 		display: table;
 		font-size: 15px;
 		float: right;
+        margin-top: 10px;
 		&:hover {
 			background: linear-gradient(to bottom, #16abe1, #1b88b0);
 		}
 	}
 }
 
+@media (max-width: 970px), (max-device-width: 970px) {
+
+    .main-menu {
+        margin: 0 auto;
+        float: none;
+        display: table;
+    }
+
+    .wrap-registr-ln {
+        margin: 0 auto;
+        float: none;
+        display: table;
+    }
+    .tariff-info-block .tariff-wrap {
+        .tariff-plan1, .tariff-plan2, .tariff-plan3 {
+            width: 100%;
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+}
+
+@media (max-width: 959px), (max-device-width: 959px) {
+    .wrap-width {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .separate-line {
+        clear: both;
+    }
+    footer {
+        nav {
+            padding-top: 10px;
+            .nav-links-item {
+                line-height: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width: 830px), (max-device-width: 830px) {
+    footer {
+        .btn-block {
+            width: 380px;
+            float: none;
+            margin: 0 auto;
+        }
+        .networks {
+            margin-top: 14px;
+        }
+    }
+
+}
+
 @media (max-width: 767px), (max-device-width: 767px) {
 	.capability-block {
-		margin-bottom: 10px;
+		margin-bottom: 50px;
 		.icon-block {
 			width: 30%;
 		}
@@ -601,14 +663,6 @@ footer {
 		width: 100%;
 		line-height: 30px;
 	}
-	.wrap-registr-ln {
-		margin: 0 auto;
-		float: none;
-		display: table;
-		.ln {
-			float: left;
-		}
-	}
 }
 
 @media (max-width: 480px), (max-device-width: 480px) {
@@ -619,10 +673,14 @@ footer {
 		}
 		.text-info-block {
 			width: 100%;
+            span {
+                font-size: 16px;
+                line-height: 24px;
+            }
 		}
 	}
 	.registr-block {
-		padding: 20px 0 60px;
+		padding: 40px 0 60px;
 		.text-info {
 			font-size: 20px;
 			margin: 20px 0;
@@ -649,4 +707,14 @@ footer {
 			}
 		}
 	}
+    footer {
+        .menu-line {
+            margin-top: 70px;
+            margin-left: 0;
+        }
+        .btn-block {
+            width: 185px;
+        }
+    }
+
 }
