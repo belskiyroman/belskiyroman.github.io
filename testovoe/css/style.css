@@ -626,10 +626,14 @@ footer .btn-news:hover {
     width: 100%;
     line-height: 30px;
   }
+  .icon-block .icon-img {
+    max-width: 90%;
+  }
 }
 @media (max-width: 480px), (max-device-width: 480px) {
   .capability-block {
     margin-bottom: 10px;
+    text-align: center;
   }
   .capability-block .icon-block {
     display: none;
@@ -642,7 +646,7 @@ footer .btn-news:hover {
     line-height: 24px;
   }
   .registr-block {
-    padding: 40px 0 60px;
+    padding: 40px 0;
   }
   .registr-block .text-info {
     font-size: 20px;
@@ -655,6 +659,10 @@ footer .btn-news:hover {
   .animation-block {
     display: none;
   }
+  .tariff-info-block {
+    padding: 80px 0;
+    text-align: center;
+  }
   .tariff-info-block .tariff-wrap .tariff-plan1,
   .tariff-info-block .tariff-wrap .tariff-plan3 {
     margin-left: auto;
@@ -664,7 +672,15 @@ footer .btn-news:hover {
   .tariff-info-block .tariff-wrap .tariff-plan2 {
     float: none;
     margin: 0 auto;
-    width: 312px;
+    width: 300px;
+  }
+  .reviews-wrap {
+    padding-top: 20px;
+    text-align: center;
+  }
+  .reviews-wrap .touchslider-item .review-text {
+    font-size: 16px;
+    line-height: 20px;
   }
   footer .menu-line {
     margin-top: 70px;
