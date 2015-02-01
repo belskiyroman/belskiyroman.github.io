@@ -420,7 +420,10 @@ menu {
 	.touchslider {
 		position: relative;
 		.touchslider-viewport {
-			box-sizing: border-box;
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+            box-sizing: border-box;
 		}
 		.touchslider-prev {
 			position: absolute;
@@ -438,7 +441,6 @@ menu {
 	.touchslider-item {
 		width: 960px;
 		overflow-y: auto;
-		/* height: 200px; */
 		box-sizing: border-box;
 		margin-top: 25px;
 		.review-text {
